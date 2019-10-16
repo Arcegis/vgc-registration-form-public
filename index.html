@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<title>Formulaire d'inscription Tournois</title>
+</head>
+<body>
+
+<form class="form-horizontal" action="form.php" method="post">
+    <div class="form-group row">
+    <label for="nom" class="col-form-label col-sm-2">Nom</label>
+        <div class="col-sm-auto">
+            <input type="text" id ="nom" name="nom" class="form-control" placeholder="Entrez votre nom">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="prenom" class="col-form-label col-sm-2">Prénom</label>
+        <div class="col-sm-auto">
+            <input type="text" id ="prenom " name="prenom" class="form-control" placeholder="Entrez votre prénom">
+        </div></div>
+    <div class="form-group row">
+    <label for="nom" class="col-form-label col-sm-2">Pseudonyme Discord</label>
+        <div class="col-sm-auto">
+            <input type="text" id ="pseudo_discord" name="pseudo_discord" class="form-control" placeholder="Entrez votre pseudonyme Discord (Pseudo#Tagà4Chiffres)">
+            <small id="pseudo_discord_help_block" class="form-text text-muted">Si vous faites partie du Discord du VGC Francophone, entrez votre pseudonyme Discord, sous la forme Pseudo#Tagà4chiffres. Cette entrée n'est pas obligatoire, mais elle peut servir si vous vous retrouvez dans le dernier carré du Tournoi.
+            </small>
+        </div>
+        </div>
+	<div class="form-group row">
+		<label for="nom" class="col-form-label col-sm-2">Pseudonyme Twitter</label>
+			<div class="col-sm-auto">
+				<input type="text" id ="pseudo_twitter" name="pseudo_twitter" class="form-control" placeholder="Entrez votre pseudonyme Twitter sans @">
+				<small id="pseudo_twitter_help_block" class="form-text text-muted">Entrez votre @Twitter ici, sans le @ de départ. Cette entrée n'est pas obligatoire, mais elle peut servir si vous vous retrouvez dans le dernier carré du Tournoi.
+				</small>
+			</div>
+			</div>
+    <div class="form-group row">
+        <label for="date" class="col-form-label col-sm-2">Date de Naissance</label>
+        <div class="col-sm-auto">
+            <input type="date" id="date" name="date" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="popid" class="col-form-label col-sm-2">POP ID</label>
+        <div class="col-sm-auto">
+            <input type="number" id="popid" name="popid" class="form-control">
+            <small id="popid_help_block" class="form-text text-muted">Entrez votre POP ID. Mettez 0 si inconnu ou non possédé.
+            </small>
+        </div>
+    </div>
+    <div class="form-group row">
+    <label for="nom" class="col-form-label col-sm-2">Adresse Mail</label>
+        <div class="col-sm-6">
+            <input type="text" id ="mail" name="mail" class="form-control" placeholder="Entrez votre adresse mail.">
+            <small id="mail_help_block" class="form-text text-muted">Entrez votre adresse mail. Elle sera utile pour vous contacter en cas de liste d'attente, ainsi que pour communiquer sur les éventuelles informations complémentaires. Elle ne sera pas enregistrée, ni revendue à des tiers.
+            </small>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-info">Se Préinscrire</button>
+</form>
+</body>
+</html>

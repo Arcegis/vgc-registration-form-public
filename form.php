@@ -13,11 +13,11 @@ $sujet_du_mail_a_envoyer_aux_participants = "";
 $contenu_du_mail_a_envoyer_aux_participants = "";
 
 if (isset($_POST['prenom']) && isset ($_POST['nom']) && isset ($_POST['date']) && isset ($_POST['popid'])){
-mail("$mail_organisateur", "Inscription à un Tournoi", "Bonjour,\r\n\r\nPrénom : {$prenom} \r\nNom : {$nom},\r\nPseudonyme Discord : {$pseudo}\r\nPseudonyme Twitter: @{$pseudo_twitter}\r\nNé le {$date}\r\net possédant le POP ID {$popid}\r\ns'est inscrit ou inscrite pour votre Tournoi.\r\n\r\nLe mail pour contacter cette personne est : {$mail}", "From:" . $mail_organisateur . "\r\n" .
+mail($mail_organisateur, "Inscription à un Tournoi", "Bonjour,\r\n\r\nPrénom : {$prenom} \r\nNom : {$nom},\r\nPseudonyme Discord : {$pseudo}\r\nPseudonyme Twitter: @{$pseudo_twitter}\r\nNé le {$date}\r\net possédant le POP ID {$popid}\r\ns'est inscrit ou inscrite pour votre Tournoi.\r\n\r\nLe mail pour contacter cette personne est : {$mail_joueur}", "From:" . $mail_organisateur . "\r\n" .
      "Reply-To:" . $mail_organisateur . "\r\n" .
      'Content-Type: text/plain; charset="utf-8"');
 
-mail($mail, $sujet_du_mail_a_envoyer_aux_participants, $contenu_du_mail_a_envoyer_aux_participants, "From:" . $mail_organisateur . "\r\n" .
+mail($mail_joueur, $sujet_du_mail_a_envoyer_aux_participants, $contenu_du_mail_a_envoyer_aux_participants, "From:" . $mail_organisateur . "\r\n" .
      "Reply-To:" . $mail_organisateur . "\r\n" .
      'Content-Type: text/plain; charset="utf-8"');
 

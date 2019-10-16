@@ -8,9 +8,9 @@ $mail_joueur = htmlspecialchars($_POST['mail']);
 $pseudo_discord = htmlspecialchars($_POST['pseudo_discord']);
 $pseudo_twitter = htmlspecialchars($_POST['pseudo_twitter']);
 $date_instant_t = date("d-m-Y");
-$mail_organisateur = ""
-$sujet_du_mail_a_envoyer_aux_participants = ""
-$contenu_du_mail_a_envoyer_aux_participants = ""
+$mail_organisateur = "";
+$sujet_du_mail_a_envoyer_aux_participants = "";
+$contenu_du_mail_a_envoyer_aux_participants = "";
 
 if (isset($_POST['prenom']) && isset ($_POST['nom']) && isset ($_POST['date']) && isset ($_POST['popid'])){
 mail("$mail_organisateur", "Inscription à un Tournoi", "Bonjour,\r\n\r\nPrénom : {$prenom} \r\nNom : {$nom},\r\nPseudonyme Discord : {$pseudo}\r\nPseudonyme Twitter: @{$pseudo_twitter}\r\nNé le {$date}\r\net possédant le POP ID {$popid}\r\ns'est inscrit ou inscrite pour votre Tournoi.\r\n\r\nLe mail pour contacter cette personne est : {$mail}", "From:" . $mail_organisateur . "\r\n" .

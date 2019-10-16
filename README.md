@@ -12,15 +12,15 @@ L'utilisateur recevra un mail avec le contenu que vous aurez écrit, et la possi
 
 Bonjour
 
-Prénom : "prénom" 
-Nom : "nom"
-Pseudonyme Discord : "pseudo"
-Pseudonyme Twitter: "pseudo"
-Né le "date en ordre américain"
-et possédant le POP ID "POP ID"
-s'est inscrit ou inscrite pour votre Tournoi.
-
-Le mail pour contacter cette personne est : "mail"
+Prénom : "prénom"  
+Nom : "nom"  
+Pseudonyme Discord : "pseudo"  
+Pseudonyme Twitter: "pseudo"  
+Né le "date en ordre américain"  
+et possédant le POP ID "POP ID"  
+s'est inscrit ou inscrite pour votre Tournoi.  
+  
+Le mail pour contacter cette personne est : "mail"  
 
 Si vous avez des questions, contactez-moi sur Discord.
 

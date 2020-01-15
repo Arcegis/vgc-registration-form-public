@@ -21,6 +21,9 @@ mail($mail_joueur, $sujet_du_mail_a_envoyer_aux_participants, $contenu_du_mail_a
      "Reply-To:" . $mail_organisateur . "\r\n" .
      'Content-Type: text/plain; charset="utf-8"');
 
+/* La ligne du dessous permet d'ouvrir le fichier liste-des-inscrits.html et d'ecrire, à chaque mail envoyé, les prénom et première lettre du nom dans le fichier en question.*/
+file_put_contents('liste-des-inscrits.html', "- " . $prenom . " " . mb_strimwidth($nom, 0, 2, '.') . "<br />", FILE_APPEND);
+
 
 echo("<html><head><meta charset=\"utf8\"><link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\"></head><body><p>Vous êtes préinscrit ou préinscrite !</p><p>Récapitulatif d'inscription <br/>Nom : {$nom}<br>Prénom : {$prenom}<br/>POP ID : {$popid}<br/>Date de Naissance : {$date}<br/>Vous serez redirigé ou redirigée vers le formulaire dans 10 secondes.</p></body></html>");
 header("Refresh:10; url=index.html");
